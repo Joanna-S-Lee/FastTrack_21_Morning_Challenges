@@ -37,10 +37,10 @@ def movie_title(movie_number)
       puts :name + 'as' + :role
              
     ]
-    '1' => 
+    '2' => 
     [
-      title: 'A New Hope'
-      year: 1977
+      title: 'Back to the Future'
+      year: 1985
       director: 'George Lucas'
       actor1: {
         name: 'Mark Hamill',
