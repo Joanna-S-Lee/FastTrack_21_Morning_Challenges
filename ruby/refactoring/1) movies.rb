@@ -11,6 +11,7 @@ def user_input
   gets.to_i-1
 end
 
+puts {#[Title: ]}
 def movie_title(movie_number)
   if movie_number == 1
   puts ' '
