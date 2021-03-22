@@ -11,61 +11,93 @@ def user_input
   gets.to_i-1
 end
 
-puts {#[Title: ]}
-def movie_title(movie_number)
-  if movie_number == 1
-  puts ' '
-  movie {
+
+  movie = {
     '1' => 
-    [
+    {
       title: 'A New Hope'
       year: 1977
       director: 'George Lucas'
-      actor1: {
-        name: 'Mark Hamill',
-        role: 'Luke Skywalker',
+      actors:[
+        {
+          name: 'Mark Hamill',
+          role: 'Luke Skywalker',
+          
+        }
+        {
+          name: 'Harrison Ford',
+          role: 'Han Solo',
+         
+        }
+        {
+          name: 'Carrie Fisher',
+          role: 'Leia Organa'
+        }
+
+      ] 
+
+  },      
+      
+      
+  '2' => 
+  {
+    title: 'Back to the Future'
+    year: 1985
+    director: 'Robert Zemeckis'
+    actors:[
+      {
+        name: 'Michael J. Fox',
+        role: 'Marty McFly',
         
       }
-      actor2: {
-        name: 'Harrison Ford',
-        role: 'Han Solo',
+      {
+        name: 'Christopher Lloyd',
+        role: 'Doc',
        
       }
-      actor3: {
-        name: 'Carrie Fisher',
-        role: 'Leia Organa'
+      {
+        name: 'Lea Thompson',
+        role: 'Lorraine Baines'
       }
-      puts :name + 'as' + :role
-             
-    ]
-    '2' => 
-    [
-      title: 'Back to the Future'
-      year: 1985
-      director: 'George Lucas'
-      actor1: {
-        name: 'Mark Hamill',
-        role: 'Luke Skywalker',
-        
-      }
-      actor2: {
-        name: 'Harrison Ford',
-        role: 'Han Solo',
-       
-      }
-      actor3: {
-        name: 'Carrie Fisher',
-        role: 'Leia Organa'
-      }
-      puts :name + 'as' + :role
-             
-    ]
-  }
+
+    ] 
+
+},
+'3' => 
+    {
+      title: 'The Matrix'
+      year: 1999
+      director: 'Lana & Lilly Wachowski'
+      actors:[
+        {
+          name: 'Keanu Reeves',
+          role: 'Neo',
+          
+        }
+        {
+          name: 'Laurence Fishburne',
+          role: 'Morpheus',
+         
+        }
+        {
+          name: 'Carrie-Anne Moss',
+          role: 'Trinity'
+        }
+
+      ] 
+
+  },
   end
 end
 
 movie_title(user_input)
 
+def display_movie(user_input)
+  puts movie 
+  puts 'Year'
+  puts 'Director'
+  puts 'Starring' :actor + 'as' + :role
+end
 # def movie_releasedate
 #   if movie_number == 1
   
