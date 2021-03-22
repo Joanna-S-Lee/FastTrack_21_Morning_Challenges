@@ -15,7 +15,50 @@ def movie_title(movie_number)
   if movie_number == 1
   puts ' '
   movie {
-    []
+    '1' => 
+    [
+      title: 'A New Hope'
+      year: 1977
+      director: 'George Lucas'
+      actor1: {
+        name: 'Mark Hamill',
+        role: 'Luke Skywalker',
+        
+      }
+      actor2: {
+        name: 'Harrison Ford',
+        role: 'Han Solo',
+       
+      }
+      actor3: {
+        name: 'Carrie Fisher',
+        role: 'Leia Organa'
+      }
+      puts :name + 'as' + :role
+             
+    ]
+    '1' => 
+    [
+      title: 'A New Hope'
+      year: 1977
+      director: 'George Lucas'
+      actor1: {
+        name: 'Mark Hamill',
+        role: 'Luke Skywalker',
+        
+      }
+      actor2: {
+        name: 'Harrison Ford',
+        role: 'Han Solo',
+       
+      }
+      actor3: {
+        name: 'Carrie Fisher',
+        role: 'Leia Organa'
+      }
+      puts :name + 'as' + :role
+             
+    ]
   }
   end
 end
