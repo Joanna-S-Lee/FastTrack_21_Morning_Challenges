@@ -93,10 +93,10 @@ end
 movie_title(user_input)
 
 def display_movie(user_input)
-  puts movie 
-  puts 'Year'
-  puts 'Director'
-  puts 'Starring' :actor + 'as' + :role
+  puts movie [:title]
+  puts "Released : #{movie[:year]}"
+  puts "Director : #{movie[:director]}"
+  puts "Starring : #{movie[#{:actor[:name]}+ 'as' + {:actor[:role]}" 
 end
 # def movie_releasedate
 #   if movie_number == 1

@@ -20,7 +20,8 @@ class Holiday
         else
             "#{day}th"    
         end
-    end  
+    end 
+     
     def in_same_month(other_holiday)
         if month == other_holiday.month
         return true
