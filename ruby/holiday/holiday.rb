@@ -32,10 +32,12 @@ end
 
 
 holiday = Holiday.new('Christmas', 25, 'December')
-# holiday_2 = Holiday.new('Boxing Day', 26, 'December')
+holiday_2 = Holiday.new('Boxing Day', 26, 'December')
 holiday_3 = Holiday.new('New Years', 1, 'January')
 holiday.display
 holiday.in_same_month(holiday_3)
+holiday.in_same_month(holiday_2)
+
 
 # holiday.month = holiday_2.month
 
